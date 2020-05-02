@@ -30,7 +30,7 @@ const App = () => {
   }, []);
 
   return (
-    <div className="App">
+    <div className="container">
       <h1 className="heading">COVID19-INDIA</h1>
 
       <Card />
