@@ -45,8 +45,9 @@
 .heading {
   font-family: 'Orbitron', sans-serif;
   text-align: center;
-  margin-top: 2%;
-  margin-bottom: 3%;
+  margin-top: 5%;
+  margin-bottom: 10%;
+  font-size: 35px;
   color: rgba(168, 6, 6, 0.945);
 }
 

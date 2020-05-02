@@ -31,12 +31,10 @@ const App = () => {
 
   return (
     <div className="container">
-      <h1 className="heading">COVID19-INDIA</h1>
-
       <Card />
 
       <div className="container mt-2">
-        <table className="table  table-bordered text-center table-hover">
+        <table className="table table-bordered text-center table-hover">
           <thead>
             <tr>
               <th className="text-secondary">Country</th>

@@ -13,14 +13,11 @@ const OriginalCard = ({
     lastupdatedtime,
   },
 }) => {
-  //   console.log(confirmed);
-  if (!confirmed) {
-    return <h1>Loading...</h1>;
-  }
   return (
     <div>
       <div className="container">
-        <div className="row text-center">
+        <h1 className="heading">COVID19-INDIA</h1>
+        <div className="row text-center ml-auto">
           <div className="col-md-4 col-sm-12">
             <div className="card text-center" style={{ width: '18rem' }}>
               <div className="card-header text-primary font-weight-bold">
