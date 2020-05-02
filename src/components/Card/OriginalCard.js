@@ -28,7 +28,18 @@ const OriginalCard = ({
               </div>
               <div className="list-group list-group-flush">
                 <span className="deltainc mt-2 text-center">
-                  {confirmed > 0 ? <span> [+ {deltaconfirmed}] </span> : null}
+                  {confirmed > 0 ? (
+                    <span>
+                      [+
+                      <CountUp
+                        start={0}
+                        end={deltaconfirmed}
+                        separator=","
+                        duration={2.5}
+                      />
+                      ]
+                    </span>
+                  ) : null}
                 </span>
                 <h3 className="font-weight-bold text-primary text-center ">
                   <CountUp
@@ -44,12 +55,23 @@ const OriginalCard = ({
 
           <div className="col-md-4 col-sm-12">
             <div className="card text-center" style={{ width: '18rem' }}>
-              <div className="card-header text-primary font-weight-bold">
+              <div className="card-header text-success font-weight-bold">
                 Total Recovered
               </div>
               <div className="list-group list-group-flush">
                 <span className="deltainc2 mt-2 text-center">
-                  {recovered > 0 ? <span> [+ {deltarecovered}] </span> : null}
+                  {recovered > 0 ? (
+                    <span>
+                      [+
+                      <CountUp
+                        start={0}
+                        end={deltarecovered}
+                        separator=","
+                        duration={2.5}
+                      />
+                      ]
+                    </span>
+                  ) : null}
                 </span>
                 <h3 className="font-weight-bold text-success text-center ">
                   <CountUp
@@ -65,12 +87,23 @@ const OriginalCard = ({
 
           <div className="col-md-4 col-sm-12">
             <div className="card text-center" style={{ width: '18rem' }}>
-              <div className="card-header text-primary font-weight-bold">
+              <div className="card-header text-danger font-weight-bold">
                 Total Deaths
               </div>
               <div className="list-group list-group-flush">
                 <span className="deltainc3 mt-2 text-center">
-                  {deaths > 0 ? <span> [+ {deltadeaths}] </span> : null}
+                  {deaths > 0 ? (
+                    <span>
+                      [+
+                      <CountUp
+                        start={0}
+                        end={deltadeaths}
+                        separator=","
+                        duration={2.5}
+                      />
+                      ]
+                    </span>
+                  ) : null}
                 </span>
                 <h3 className="font-weight-bold text-danger text-center ">
                   <CountUp
