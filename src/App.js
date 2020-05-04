@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Card from './components/Card/Card';
+import Card from './components/Card/CardConfig';
 import StateTable from './components/StateTable/StateTable';
 import Axios from 'axios';
 import './components/StateTable/style.css';
@@ -37,7 +37,7 @@ const App = () => {
         <table className="table table-bordered text-center table-hover">
           <thead>
             <tr>
-              <th className="text-secondary">Country</th>
+              <th className="text-secondary">State</th>
               <th className="text-danger">Confirmed</th>
               <th className="text-primary">Active</th>
               <th className="text-success">Recovered</th>

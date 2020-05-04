@@ -16,7 +16,9 @@ const OriginalCard = ({
   return (
     <div>
       <div className="container">
-        <h1 className="heading">COVID19-INDIA</h1>
+        <h1 className="heading">
+          COVID19- <span className="text">INDIA</span>
+        </h1>
         <div className="row text-center ml-auto">
           <div className="col-md-4 col-sm-12">
             <div className="card text-center" style={{ width: '18rem' }}>
