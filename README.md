@@ -1,4 +1,4 @@
-## Website preview : https://heuristic-liskov-385baa.netlify.app/
+## Website preview : https://covid19-trackerindia.netlify.app/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
