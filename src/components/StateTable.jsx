@@ -12,6 +12,7 @@ import DeltaCases from './DeltaCases'
 
 const useStyles = makeStyles((theme) => ({
 	table: {
+		textAlign: 'center',
 		'& th': {
 			fontWeight: 'bold'
 		}
