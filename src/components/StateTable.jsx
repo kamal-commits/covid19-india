@@ -5,7 +5,8 @@ import {
 	TableBody,
 	TableCell,
 	TableHead,
-	TableRow
+	TableRow,
+	TableContainer
 } from '@material-ui/core'
 import React from 'react'
 import DeltaCases from './DeltaCases'
@@ -25,6 +26,7 @@ const StateTable = ({ cases }) => {
 	const classes = useStyles()
 	const tableHeading = ['State', 'Confirmed', 'Active', 'Recovered', 'Deaths']
 	const stateTable = (
+	<TableContainer>
 		<Table className={classes.table}>
 			<TableHead>
 				<TableRow>
@@ -65,6 +67,7 @@ const StateTable = ({ cases }) => {
 				))}
 			</TableBody>
 		</Table>
+		</TableContainer>
 	)
 	return (
 		<Grid container>
